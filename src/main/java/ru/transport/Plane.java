@@ -2,6 +2,6 @@ package ru.transport;
 
 public class Plane extends Transport {
     public Plane() {
-        super("Самолет", 7);
+        super("Самолет", 7.2);
     }
 }

@@ -74,7 +74,7 @@ public class Route {
         return routes;
     }
 
-    public int calculatePrice() {
+    public double calculatePrice() {
         return transport.getPrice() * distance;
     }
     public String toString() {
