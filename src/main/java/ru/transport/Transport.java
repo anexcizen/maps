@@ -17,7 +17,4 @@ public class Transport {
         this.price = price;
     }
 
-    public String toString() {
-        return "транспорт: " + name;
-    }
 }
