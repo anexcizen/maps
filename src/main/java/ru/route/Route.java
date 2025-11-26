@@ -24,7 +24,15 @@ public class Route {
         this.transport = transport;
     }
 
-    public Route[] getAllRoutes() {
+    public String getDeparturePoint() {
+        return departurePoint;
+    }
+
+    public String getArrivingPoint() {
+        return arrivingPoint;
+    }
+
+    public static Route[] getAllRoutes() {
         Car car = new Car();
         Bus bus = new Bus();
         Plane plane = new Plane();
@@ -78,6 +86,6 @@ public class Route {
         return transport.getPrice() * distance;
     }
     public String toString() {
-        return "Маршрут из " + departurePoint + " в " + arrivingPoint + " на транспорте: " + transport.getName() + "\nВремя отправления: " + timeOfDeparture + ". Время прибытия: " + timeOfArriving + "\nЦена билета: " + calculatePrice();
+        return "Маршрут из " + departurePoint + " в " + arrivingPoint + " на транспорте: " + transport.getName() + "\nВремя отправления: " + timeOfDeparture + ". Время прибытия: " + timeOfArriving + "\nЦена билета: " + calculatePrice() + "\n";
     }
 }
